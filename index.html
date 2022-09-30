@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <style>
+     .header{
+        color: rgb(89, 89, 165);
+     }
+    </style>
+</head>
+<body>
+    <h1 class="header">APPLICATION FORM</h1>
+ 
+    <form action="submitted.html">
+        <fieldset>
+            <legend>personal details:</legend>
+       <label for="text"> user name:</label> <br>
+       <input type="text" placeholder="enter your full name" required>
+       <br><br>
+      <label for="text">Email id:</label><br>
+      <input type="email" placeholder="enter your email id" required
+      pattern="(?=.*\d))?=.[@]">
+      <br><br>
+      <label for="password">password:</label>
+       <input type="password" placeholder="enter your password"
+       required pattern="(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[0-9])(?=.[@#$%^&!]).{8,}" 
+       title="password must contain atleast one number
+       atleast one special character,lower and upper
+       case and it should contain atleast 8
+       or more characters">
+       </fieldset>
+
+       <br><br>
+
+       <fieldset>
+        <legend>select your gender:</legend>
+        <div>
+        <input type="radio" name="gender">Male <br>
+        <input type="radio" name="gender">Female <br>
+        <input type="radio" name="gender">Others <br>
+        </div>    
+       </fieldset>
+       <br><br>
+
+
+       <fieldset>
+      <legend>Select your skill</legend>
+       <input type="checkbox" name="checkbox"> C <br>
+       <input type="checkbox" name="checkbox"> C++<br>
+       <input type="checkbox" name="checkbox">Java<br>
+       <input type="checkbox" name="checkbox">Python<br>
+       <input type="checkbox" name="checkbox">HTML<br>
+       <input type="checkbox" name="checkbox">CSS<br>
+       </fieldset>
+       <br><br>
+       <fieldset>
+        <legend>Experience:</legend>
+        <select name="experience" id="experience">
+            <option value="select" required value="1">select</option>
+            <option value="0-1" value="2">1 to 2 year</option>
+            <option value="1-2" value="3">2 to 3 year</option>
+            <option value="2-3" value="4">3 to 4 year</option>
+            <option value="more than 5" value=>not supported</option>
+        </select>
+       </fieldset>
+
+       <fieldset>
+        <legend>Adress:</legend>
+        <textarea name=""address" cols ="30" rows="5"><</textarea>
+
+       </fieldset>
+       <br>
+       <button>submit</button>
+
+     
+    </form>
+</body>
+</html>
